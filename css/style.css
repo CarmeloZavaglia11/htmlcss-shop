@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+}
+
+.card{
+    width: 350px;
+    height: 330px;
+    margin: 5px auto;
+    display: inline-block;
+    background-color: grey;
+    position: relative;
+}
+
+.first{
+    background-image: url(../img/pd1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.second{
+    background-image: url(../img/pd2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.third{
+    background-image: url(../img/pd3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sale{
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.fivepc{
+    background-color: red;
+    text-align: center;
+}
+
+.fivepc::before{
+    content: "-5%";
+}
+
+.thirtypc{
+    background-color: green;
+    text-align: center;
+}
+
+.thirtypc::before{
+    content: "-30%";
+}
+
+.heart{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 50px;
+    color: red;
+    display:none;
+}
+
+.card:hover .heart{
+    display: block;
+}
